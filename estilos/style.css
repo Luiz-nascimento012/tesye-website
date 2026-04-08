@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --texto: #222222;
+    --texto-inverso: #e0e0e0;
+    --destaque: #5400F5;
+    --destaque-inverso: #F5EB00;
+    --fundo-card: #b3b3b3;
+    --fundo: #f5f5f5;
+}
+
+body {
+    height: 100vh;
+    line-height: 1.5em;
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    background-color: var(--destaque-inverso);
+    padding: 20px;
+    gap: 40px;
+}
+
+header div.navegation {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+header div.navegation figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header div.navegation figcaption {
+    font-size: 1.5em;
+}
+
+header div.navegation figure img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header div.navegation nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+header div.navegation nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 1.3em;
+}
+
+header div.navegation nav a:hover {
+    color: var(--texto-inverso);
+    background-color: var(--destaque);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+article.projects h2 {
+    color: var(--destaque);
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+article.projects ul {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+}
+
+article.projects ul li a {
+    display: block;
+    color: var(--texto);
+    background-color: var(--destaque-inverso);
+    border-bottom: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+article.projects ul li a:hover {
+    background-color: var(--destaque);
+    color: var(--texto-inverso);
+}
+
+article.works h2 {
+    color: var(--destaque);
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
