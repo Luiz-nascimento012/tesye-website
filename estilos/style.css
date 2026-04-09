@@ -11,7 +11,7 @@
     --texto-inverso: #e0e0e0;
     --destaque: #5400F5;
     --destaque-inverso: #F5EB00;
-    --fundo-card: #b3b3b3;
+    --fundo-card: #e0e0e0;
     --fundo: #f5f5f5;
 }
 
@@ -40,16 +40,17 @@ header div.navegation {
 
 header div.navegation figure {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 header div.navegation figcaption {
+    color: var(--texto);
     font-size: 1.5em;
 }
 
 header div.navegation figure img {
+    border: 2px solid black;
     aspect-ratio: 1/1;
     object-fit: cover;
     height: 100px;
@@ -68,6 +69,7 @@ header div.navegation nav a {
     text-decoration: none;
     color: var(--texto);
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 header div.navegation nav a:hover {
@@ -78,12 +80,13 @@ header div.navegation nav a:hover {
 }
 
 header h1 {
+    color: var(--destaque);
     text-align: center;
     margin-bottom: 20px;
 }
 
 
-article.projects h2 {
+article h2 {
     color: var(--destaque);
     text-align: center;
     padding: 10px;
@@ -113,13 +116,100 @@ article.projects ul li a:hover {
     background-color: var(--destaque);
     color: var(--texto-inverso);
 }
+article.works div.card-works {
+    background-color: var(--fundo-card);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-left: 5px solid var(--destaque-inverso);
+}
 
-article.works h2 {
+article.works a {
+    text-decoration: none;
+    color: var(--destaque);
+    font-weight: bold;
+}
+
+article.works a:hover {
+    text-decoration: underline;
+    background-color: var(--destaque);
+    padding: 2px;
+    border-radius: 8px;
+    color: var(--destaque-inverso);
+    transition: 0.3s ease;
+}
+
+article.edu div.info {
+    background-color: var(--fundo-card);
+}
+
+article.edu p {
+    margin: 0px 10px;
+}
+
+article.edu h3 {
+    margin-left: 10px;
+}
+
+article.edu ul {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+article.edu ul li p {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+footer h2 {
     color: var(--destaque);
     text-align: center;
     padding: 10px;
 }
 
+footer div.card {
+    background-color: var(--fundo-card);
+    margin: auto;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 70%;
+}
+
+footer div.card cite {
+    margin-top: 10px;
+    color: var(--destaque);
+    font-weight: bold;
+}
+
+footer div.cards {
+    display: flex;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    footer div.cards {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+    footer div.card {
+    display: none;
+  }
+  
+    footer div.card.active {
+    display: block;
+  }
+}
+
+footer p {
+    background-color: var(--destaque-inverso);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
 
 
 

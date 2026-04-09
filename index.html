@@ -7,6 +7,7 @@
     <meta name="keywords" content="website, portfolio, projetos">
     <title>teste de site</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css" media="all">
 </head>
 <body>
     <header>
@@ -39,17 +40,31 @@
             </article>
             <article class="works">
                 <h2>alguns trabalhos</h2>
-                <p>fazendo umas paradas no roadmap.shkkkkkkk vê lá dps</p>
+                <div class="card-works">
+                    <h3>roadmap.sh</h3>
+                    <p>fazendo umas paradas no roadmap.shkkkkkkk vê lá dps</p>
+                    <a href="https://roadmap.sh/u/luizaki12" target="_blank">veja mais aqui</a>
+                </div>
+                <div class="card-works">
+                    <h3>github</h3>
+                    <p>também tenho projetos no github para mais apresentações</p>
+                    <a href="https://github.com/Luiz-nascimento012" target="_blank">veja mais aqui</a>
+                </div>
+
             </article>
-            <artilcle class="edu">
+            <article class="edu">
                 <h2>cursos e coisas que eu já aprendi</h2>
-                <ul>
-                    <li>HTML e CSS</li>
-                    <li>JavaScript</li>
-                    <li>Hardware</li>
-                    <li>Java</li>
-                </ul>
-            </artilcle>
+                <div class="info">
+                    <p>uma jornada boa que me deu um pouco de conhecimento que aguardo melhorar com o tempo.</p>
+                    <h3>entre as técnologias que eu aprendi estão:</h3>
+                    <ul>
+                        <li><p>HTML e CSS</p></li>
+                        <li><p>JavaScript</p></li>
+                        <li><p>Hardware</p></li>
+                        <li><p>Java</p></li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </main>
     <footer class="reviews">
@@ -70,5 +85,7 @@
                 </div>
                 <p> &copy; direitos desse site para Luiz Augusto</p>
             </footer>
+
+            <script src="scripts/main.js"></script>
 </body>
 </html>
